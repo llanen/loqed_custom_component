@@ -187,13 +187,13 @@ class LoqedLock(LockEntity):
         """To call the unlock method of the loqed lock."""
         _LOGGER.debug("start unlock operation")
         await self.async_schedule_update(10)
-        await self._lock.unlock()
+        #await self._lock.unlock()
 
     async def async_open(self, **kwargs):
         """To call the open method of the loqed lock."""
         _LOGGER.debug("start open operation")
         await self.async_schedule_update(10)
-        await self._lock.open()
+        #await self._lock.open()
 
     async def async_update(self) -> None:
         """To update the internal state of the device."""
